@@ -1,4 +1,4 @@
-{{> lineUpNav}}
+{{!-- {{> lineUpNav}}
 
 <section class="section-wrapper">
   <h2>Events: <span>{{day}}</span></h2>
@@ -18,4 +18,26 @@
     </li>
     {{/each}}
   </ul>
-</section>
+</section> --}}
+
+<div class="card">
+  {{!-- {{id}}
+  {{image}}
+  {{name}}
+  {{selected}} --}}
+  <img src="{{image}}" alt="card image">
+  <h1>{{name}}</h1>
+
+  <form method="POST" action="/card/not-select" class="form" id="left">
+    <input type="hidden" name="id" value="{{id}}">
+    <div></div>
+    <button>Left</button>
+  </form>
+
+  <form method="POST" action="/card/select" class="form" id"right">
+    <input type="hidden" name="id" value="{{id}}">
+    <div></div>
+    <button>Right</button>
+  </form>
+
+</div>

@@ -36,6 +36,31 @@ server.get('/', (req, res) => {
         // res.redirect('/schedule/friday')
 })
 
-// server.use('/locations', locationRoutes)
-// server.use('/schedule', scheduleRoutes)
-// server.use('/events', eventRoutes)
+const imagePath = path.relative(__dirname, 'images/hedgehog.jpg')
+
+const testData = {
+    id: 1,
+    image: imagePath,
+    name: 'train Station',
+    selected: null,
+}
+
+server.get('/cards', (req, res) => {
+    //check if last card
+    const card = testData
+    res.render('showCard', card)
+})
+
+server.post('/card/select', (req, res) => {
+    //incriment index
+    console.log(res.body)
+    console.log('selected')
+    res.redirect('/cards')
+})
+
+server.post('/card/not-select', (req, res) => {
+    //incriment index
+    console.log(req.body)
+    console.log('not selceted')
+    res.redirect('/cards')
+})
