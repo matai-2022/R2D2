@@ -27,7 +27,11 @@ server.set('view engine', 'hbs')
  *************************/
 
 server.get('/', (req, res) => {
-  res.redirect('/')
+
+   // res.send('hellllloooo')
+    res.render('start')
+
+  // res.redirect('/')
 })
 
 server.use('/cards', cardsRoutes)
