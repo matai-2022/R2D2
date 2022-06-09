@@ -24,17 +24,17 @@ body {
 }
 
 header {
-  background-color: var(--main);
+  background-color: #F04A00;
   position: fixed;
   width: 100%;
 }
 
 header h1 {
-  color: var(--green);
+  color: #ffffff;
   display: inline-block;
   margin: var(--base-size);
   font-size: 5rem;
-  text-shadow: 3px 2px 0 var(--lightGreen); 
+
 }
 
 header i {
@@ -182,4 +182,8 @@ select {
 
 input, textarea {
   font-family: 'Open Sans', sans-serif;
+}
+
+.devacademy{
+  margin-left: 100px;
 }
