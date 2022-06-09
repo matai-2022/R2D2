@@ -1,0 +1,15 @@
+{{> locationsNav}}
+
+<section class="section-wrapper">
+  <h2>Locations:</h2>
+  <ul class="grid-columns">
+    {{#each locations}}
+      <li class="grid-inner">
+        <i class="fa-solid fa-campground"></i>
+        <h3 class="title">{{name}}</h3>
+        <p class="data">{{description}}</p>
+        <a class="button" href="/locations/{{id}}/edit">Edit Location</a>
+      </li>
+    {{/each}}
+  </ul>
+</section>
