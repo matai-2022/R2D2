@@ -9,7 +9,9 @@ module.exports = {
   deleteCard,
 }
 
-function getCardById(db = connection) {}
+function getCardById(id,db = connection) {
+  return db('cards').where('id', id).first()
+}
 
 function editCard(db = connection) {}
 
