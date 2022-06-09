@@ -27,10 +27,8 @@ server.set('view engine', 'hbs')
  *************************/
 
 server.get('/', (req, res) => {
-
-   // res.send('hellllloooo')
-    res.render('start')
-
+  // res.send('hellllloooo')
+  res.render('start')
   // res.redirect('/')
 })
 
