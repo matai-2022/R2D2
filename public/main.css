@@ -34,10 +34,12 @@ header {
 }
 
 header h1 {
-  color: #ffffff;
-  display: inline-block;
-  margin: var(--base-size);
-  font-size: 5rem;
+    color: #ffffff;
+    /* display: inline-block; */
+    margin: var(--base-size);
+    font-size: 5rem;
+    text-align: center;
+    /* width: 50px */
 }
 
 header i {
@@ -52,7 +54,8 @@ header i {
     padding-top: 8rem;
 }
 
-.grid-columns {
+
+/* .grid-columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: var(--base-size);
@@ -73,13 +76,14 @@ header i {
 
 .grid-inner>p {
     margin: var(--base-size) 0;
-}
+} */
 
-ul {
+
+/* ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+} */
 
 .section-wrapper {
     margin: 0 var(--base-size);
@@ -94,10 +98,12 @@ a:hover {
     color: var(--darkRed);
 }
 
-
-h1, h3, h4, h5 {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--main);
+h1,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main);
 }
 
 nav {
@@ -118,7 +124,8 @@ p {
     margin: 0;
 }
 
-.time-location {
+
+/* .time-location {
     margin-top: var(--base-size);
     ;
     font-size: var(--base-size);
@@ -129,29 +136,31 @@ p {
     ;
     margin-bottom: var(--base-size);
     ;
-}
+} */
 
-.button {
+
+/* .button {
     font-weight: 700;
-    display: inline-block;
+    display: inline;
     background-color: var(--green);
     color: #ffffff;
     padding: 0.5rem;
     box-shadow: 3px 3px 0 var(--lightGreen);
-}
+} */
 
 .button:hover {
     background-color: var(--lightRed);
     color: var(--lightGreen);
 }
 
-.form {
+
+/* .form {
     display: grid;
     grid-template-columns: 200px 300px;
     grid-auto-flow: row;
     grid-gap: 0.8em;
     padding: var(--base-size) 0;
-}
+} */
 
 .form label {
     font-family: 'Montserrat', sans-serif;
@@ -162,7 +171,7 @@ p {
 
 .form button {
     font-weight: 700;
-    background-color: var(--green);
+    background-color: rgb(238, 75, 28);
     color: #ffffff;
     padding: 0.5rem;
     box-shadow: 3px 3px 0 var(--lightGreen);
@@ -216,61 +225,76 @@ textarea {
     color: aqua;
     /* position: relative; */
     /* left: 150px; */
-    float: right;
+    /* float: right; */
+    /* display: inline; */
+    /* display: inline; */
+    /* float: right; */
+    margin: auto;
 }
 
 #no {
-    color: aqua;
+    color: black;
     /* position: relative; */
     /* left: -150px; */
-    float: left;
+    /* float: left; */
+    /* display: inline;
+    float: left; */
+    margin: auto;
+}
+
+#noForm {
+    margin: auto
+}
+
+#yesForm {
+    margin: auto
 }
 
 .cardButton {
-    width: 50px;
+    width: auto;
+    margin: 100px;
 }
 
-.devacademy{
-  margin-left: 100px;
+.devacademy {
+    margin-left: 100px;
 }
 
 footer {
-margin-top: 150px;
+    margin-top: 150px;
 }
 
 h2 {
-  margin-left: 800px;
-  text-align: bottom;
-  font-family: 'Montserrat', sans-serif;
-  color: var(--main);
+    margin-left: 800px;
+    text-align: bottom;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main);
 }
 
 button {
-  font-weight: 700;
-  background-color: var(--green);
-  color: #ffffff;
-  padding: 0.5rem;
-  box-shadow: 3px 3px 0 var(--lightGreen); 
-  border: none;
-
+    font-weight: 700;
+    background-color: var(--green);
+    color: #ffffff;
+    padding: 0.5rem;
+    box-shadow: 3px 3px 0 var(--lightGreen);
+    border: none;
 }
 
 .Startbody {
-  text-align: center;
+    text-align: center;
 }
 
 h4 {
-  color: black;
-  font-family: 'Brush Script MT'; 
-  font-size: x-large;
+    color: black;
+    font-family: 'Brush Script MT';
+    font-size: x-large;
 }
 
 #TINDER1 {
-display: absolute;
-margin-right: 200px;
+    display: absolute;
+    margin-right: 200px;
 }
 
 #TINDER2 {
-  display: absolute;
-margin-left: 200px;
+    display: absolute;
+    margin-left: 200px;
 }
