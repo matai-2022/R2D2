@@ -13,7 +13,6 @@ function getCardById(id,db = connection) {
   return db('cards').where('id', id).first()
 }
 
-//function editCard(db = connection) {}
 function editCard(id, updatedCardInfo,db = connection) {
   return db('cards')
     .where('id', id)

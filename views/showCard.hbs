@@ -26,18 +26,21 @@
   {{name}}
   {{selected}} --}}
   <img src="{{image}}" alt="card image">
-  <h1>{{name}}</h1>
+  <h1 id="cardName">{{name}}</h1>
+</div>
 
-  <form method="POST" action="/card/not-select" class="form" id="left">
+<div id="yesForm" class="cardButton">
+  <form method="POST" action="/card/not-select" class="form" id="no">
     <input type="hidden" name="id" value="{{id}}">
     <div></div>
-    <button>Left</button>
+    <button>No</button>
   </form>
+</div>
 
-  <form method="POST" action="/card/select" class="form" id"right">
+<div id="noForm" class="cardButton">
+  <form method="POST" action="/card/select" class="form" id="yes">
     <input type="hidden" name="id" value="{{id}}">
     <div></div>
-    <button>Right</button>
+    <button>Yes</button>
   </form>
-
 </div>
