@@ -34,10 +34,19 @@ header {
 }
 
 header h1 {
+<<<<<<< HEAD
     color: #ffffff;
     display: inline-block;
     margin: var(--base-size);
     font-size: 5rem;
+=======
+  color: #ffffff;
+  display: inline-block;
+  margin: var(--base-size);
+  font-size: 5rem;
+  
+
+>>>>>>> c9042b6a9500c340bdea0a691770b0fa1ddeeac2
 }
 
 header i {
@@ -94,6 +103,7 @@ a:hover {
     color: var(--darkRed);
 }
 
+<<<<<<< HEAD
 h1,
 h2,
 h3,
@@ -101,6 +111,11 @@ h4,
 h5 {
     font-family: 'Montserrat', sans-serif;
     color: var(--main);
+=======
+h1, h3, h4, h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--main);
+>>>>>>> c9042b6a9500c340bdea0a691770b0fa1ddeeac2
 }
 
 nav {
@@ -229,6 +244,40 @@ textarea {
     float: left;
 }
 
+<<<<<<< HEAD
 .cardButton {
     width: 50px;
+=======
+.devacademy{
+  margin-left: 100px;
+}
+
+footer {
+margin-top: 150px;
+}
+
+h2 {
+  text-align: center;
+font-family: 'Montserrat', sans-serif;
+  color: var(--main);
+}
+
+button {
+  font-weight: 700;
+  background-color: var(--green);
+  color: #ffffff;
+  padding: 0.5rem;
+  box-shadow: 3px 3px 0 var(--lightGreen); 
+  border: none;
+
+}
+
+.Startbody {
+  text-align: center;
+}
+
+.h4 {
+  color: black;
+  font-family: 'Brush Script MT';
+>>>>>>> c9042b6a9500c340bdea0a691770b0fa1ddeeac2
 }
