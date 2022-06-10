@@ -27,10 +27,10 @@ router.get('/:id/edit', async (req, res) => {
 router.post('/:id/edit', async (req, res) => {
   
   try {
-    const { id, name, image } = req.body
+    const id = req.params.id
+    const updatedCardInfo = req.body
 
-   
-    await db.updatedCarInfo(id, name, image)
+    await db.editCard(id, updatedCardInfo)
     res.redirect('/cards')
   } catch (err) {
     res.status(500).send(err.message)
