@@ -3,7 +3,7 @@ exports.up = function (knex) {
     table.increments('id').primary()
     table.string('name')
     table.string('image')
-    table.string('selected').notNullable().defaultTo('')
+    table.string('selected').notNullable().defaultTo(0)
   })
 }
 

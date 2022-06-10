@@ -34,19 +34,10 @@ header {
 }
 
 header h1 {
-<<<<<<< HEAD
-    color: #ffffff;
-    display: inline-block;
-    margin: var(--base-size);
-    font-size: 5rem;
-=======
   color: #ffffff;
   display: inline-block;
   margin: var(--base-size);
   font-size: 5rem;
-  
-
->>>>>>> c9042b6a9500c340bdea0a691770b0fa1ddeeac2
 }
 
 header i {
@@ -103,19 +94,10 @@ a:hover {
     color: var(--darkRed);
 }
 
-<<<<<<< HEAD
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--main);
-=======
+
 h1, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   color: var(--main);
->>>>>>> c9042b6a9500c340bdea0a691770b0fa1ddeeac2
 }
 
 nav {
@@ -244,10 +226,10 @@ textarea {
     float: left;
 }
 
-<<<<<<< HEAD
 .cardButton {
     width: 50px;
-=======
+}
+
 .devacademy{
   margin-left: 100px;
 }
@@ -257,8 +239,9 @@ margin-top: 150px;
 }
 
 h2 {
-  text-align: center;
-font-family: 'Montserrat', sans-serif;
+  margin-left: 800px;
+  text-align: bottom;
+  font-family: 'Montserrat', sans-serif;
   color: var(--main);
 }
 
@@ -276,8 +259,18 @@ button {
   text-align: center;
 }
 
-.h4 {
+h4 {
   color: black;
-  font-family: 'Brush Script MT';
->>>>>>> c9042b6a9500c340bdea0a691770b0fa1ddeeac2
+  font-family: 'Brush Script MT'; 
+  font-size: x-large;
+}
+
+#TINDER1 {
+display: absolute;
+margin-right: 200px;
+}
+
+#TINDER2 {
+  display: absolute;
+margin-left: 200px;
 }
