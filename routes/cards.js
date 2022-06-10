@@ -40,6 +40,7 @@ router.post('/:id/not-select', async (req, res) => {
     res.redirect(`/:${id + 1}`)
   }
 })
+
 // GET /cards/4/edit
 router.get('/:id/edit', async (req, res) => {
   try {

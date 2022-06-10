@@ -1,43 +1,37 @@
-{{!-- {{> lineUpNav}}
 
-<section class="section-wrapper">
-  <h2>Events: <span>{{day}}</span></h2>
-  <a class="button" href="/events/add/{{day}}">Add Event</a>
 
-  <ul class="grid-columns">
-    {{#each events}}
-    <li class="grid-inner">
-      <i class="fa-solid fa-otter"></i>
-      <h3 class="title">{{eventName}}</h3>
-      <div class="time-location">
-        <p><strong>Location:</strong> <span class="data">{{locationName}}</span></p>
-        <p><strong>Time:</strong> <span class="data">{{time}}</span></p>
-      </div>
-      <p>{{description}}</p>
-      <a class="button" href="/events/{{id}}/edit">Edit Event</a>
-    </li>
-    {{/each}}
-  </ul>
-</section> --}}
 
 <div class="card">
-  {{!-- {{id}}
-  {{image}}
-  {{name}}
-  {{selected}} --}}
+ 
   <img src="{{image}}" alt="card image">
-  <h1>{{name}}</h1>
+  <h1 id="cardName">{{name}}</h1>
+</div>
 
-  <form method="POST" action="/card/not-select" class="form" id="left">
+
+ 
+</div>
+
+<div class="cardsButtons">
+
+ <form method="POST" action="/card/not-select" class="form" id="left">
+
+<div id="yesForm" class="cardButton">
+  <form method="POST" action="/card/not-select" class="form" id="no">
+
     <input type="hidden" name="id" value="{{id}}">
     <div></div>
-    <button>Left</button>
+    <button>No</button>
   </form>
+</div>
 
-  <form method="POST" action="/card/select" class="form" id"right">
+<div id="noForm" class="cardButton">
+  <form method="POST" action="/card/select" class="form" id="yes">
     <input type="hidden" name="id" value="{{id}}">
     <div></div>
-    <button>Right</button>
+    <button>Yes</button>
   </form>
+
+  </div>
 
 </div>
+
