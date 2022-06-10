@@ -40,3 +40,26 @@ router.post('/:id/not-select', async (req, res) => {
     res.redirect(`/:${id + 1}`)
   }
 })
+// GET /cards/4/edit
+router.get('/:id/edit', async (req, res) => {
+  try {
+    const id = Number(req.params.id)
+    const cardInfo = await db.getCardById(id)
+    res.render('editCard', cardInfo)
+  } catch (err) {
+    res.status(500).send(err.message)
+  }
+})
+
+// POST /cards/4/edit
+router.post('/:id/edit', async (req, res) => {
+  try {
+    const id = req.params.id
+    const updatedCardInfo = req.body
+
+    await db.editCard(id, updatedCardInfo)
+    res.redirect('/cards')
+  } catch (err) {
+    res.status(500).send(err.message)
+  }
+})

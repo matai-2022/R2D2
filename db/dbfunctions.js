@@ -23,7 +23,15 @@ function changeSelectedValue(id, value, db = connection) {
   return db('cards').where('id', id).update('selected', value)
 }
 
-function editCard(db = connection) {}
+function editCard(id, updatedCardInfo, db = connection) {
+  return db('cards')
+    .where('id', id)
+    .update(updatedCardInfo)
+
+    .catch((err) => {
+      console.error(err.message)
+    })
+}
 
 function addCard(db = connection) {}
 
