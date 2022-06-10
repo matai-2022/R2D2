@@ -18,12 +18,16 @@
 <div id="yesForm" class="cardButton">
   <form method="POST" action="/card/not-select" class="form" id="no">
 
+
+  <form method="POST" action="/cards/not-select" class="form" id="left">
+
     <input type="hidden" name="id" value="{{id}}">
     <div></div>
     <button>No</button>
   </form>
 </div>
 
+  <form method="POST" action="/cards/select" class="form" id="right">
 <div id="noForm" class="cardButton">
   <form method="POST" action="/card/select" class="form" id="yes">
     <input type="hidden" name="id" value="{{id}}">
