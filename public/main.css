@@ -289,12 +289,31 @@ h4 {
     font-size: x-large;
 }
 
+.card {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40%;
+  /* margin: 40px; */
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+}
+
 #TINDER1 {
     display: absolute;
     margin-right: 200px;
 }
 
 #TINDER2 {
+  
+  display: absolute;
+margin-left: 200px;
+}
+
+.cardsButtons {
+  margin:auto;
+  
     display: absolute;
     margin-left: 200px;
+
 }
